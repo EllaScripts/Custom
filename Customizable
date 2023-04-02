@@ -1,0 +1,89 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Ella UI",
+   LoadingTitle = "Ella Premium",
+   LoadingSubtitle = "by Ella",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = true, -- Create a custom folder for your hub/game
+      FileName = "EllaLock"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "53c635kB7W", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Ella Lock Key",
+      Subtitle = "Key System",
+      Note = "You Should Have Got A Key From Ella, If not ask her. (https://discord.gg/53c635kB7W)",
+      FileName = "EllaLock",
+      SaveKey = true,
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "$kaykohi"
+   }
+})
+
+local HTab = Window:CreateTab("Home", 11234862800) -- Title, Image
+local HSection = HTab:CreateSection("Read Below")
+
+Rayfield:Notify({
+    Title = "Ella Premium",
+    Content = "Thanks For Buying Ella Premium, Do Not Leak This, Or You Will Be Banned.",
+    Duration = 5.7,
+    Image = 4483362458,
+    Actions = { -- Notification Buttons
+       Ignore = {
+          Name = "Okay",
+          Callback = function()
+          print("You Said Okay")
+       end
+    },
+ },
+ })
+local Button = HTab:CreateButton({
+   Name = "Copy Discord",
+   Callback = function()
+   setclipboard("https://discord.gg/53c635kB7W")
+   end,
+})
+local Button = HTab:CreateButton({
+   Name = "Copy YouTube",
+   Callback = function()
+   setclipboard("https://www.youtube.com/channel/UCfYzz-PxZD-OEnoMeZBPKSA")
+   end,
+})
+
+local Label = HTab:CreateLabel("J.Cole")
+local Label = HTab:CreateLabel("-4°")
+local Label = HTab:CreateLabel("Rhys")
+local Label = HTab:CreateLabel("bando.")
+local Label = HTab:CreateLabel("Lorelius Hogglefart")
+local Label = HTab:CreateLabel("♱Frost✓")
+local Label = HTab:CreateLabel("! Finz")
+local Label = HTab:CreateLabel("AstroGotJokes")
+local Label = HTab:CreateLabel("8een!")
+local Label = HTab:CreateLabel("Sp3dy")
+
+
+
+------------------------LOCKSSS
+
+
+local LTab = Window:CreateTab("Locks", 284663801) -- Title, Image
+local LSection = LTab:CreateSection("Keybind is C")
+
+local Button = LTab:CreateButton({
+   Name = "Ella Camlock",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EllaScripts/EllaScripts/main/EllaLock!!!", true))()
+   end,
+})
+
+    local Button = LTab:CreateButton({
+   Name = "Ella Streamable",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EllaScripts/SmoothBrain/main/Streamable", true))()
+   end,
+})
